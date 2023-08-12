@@ -50,8 +50,22 @@ async function validURL() {
 </script>
 
 <template>
-  <input type="text" v-model="link" @keydown="validURL()" />
-  <button @click="validURL()">Short Your Link</button>
-  <h3>{{ shortenedLink }}</h3>
+  <div class="flex justify-around">
+    <input
+      type="text"
+      v-model="link"
+      @keydown="validURL()"
+      class="border border-blue-600 rounded-md px-4 py-1"
+    />
+    <button
+      @click="validURL()"
+      class="text-blue-600 bg-slate-200 border rounded-md px-3"
+    >
+      Short Your Link
+    </button>
+  </div>
+  <h3 class="text-center my-8 bg-slate-400 rounded-md py-2">
+    {{ shortenedLink }}
+  </h3>
   <p v-if="loading">Loading ...</p>
 </template>
