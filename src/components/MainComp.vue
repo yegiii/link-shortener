@@ -6,7 +6,7 @@ const link = ref("");
 const shortenedLink = ref("");
 const loading = ref<Boolean>(false);
 const token = "142adebca64d8eaf1d4c320a3687562854cd4912";
-const guid = "Ba1bc23dE4F";
+// const guid = "Ba1bc23dE4F";
 // Ba1bc23dE4F
 
 async function validURL() {
